@@ -1,0 +1,10 @@
+<!--pages/success/success.wxml-->
+<view class='i3' style="opacity:{{0.6}}">
+  <image src="../../images/i4.png" class="i3" ></image>
+</view>
+<text>\n\n\n</text>
+<view class="container">
+  <text class='text'> 提交成功</text>
+</view>
+<text>\n\n\n\n\n\n\n\n\n\n\n\n</text>
+<button type="primary" bindtap="look">查看</button>

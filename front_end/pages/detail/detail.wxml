@@ -1,0 +1,18 @@
+<!--pages/detail/detail.wxml-->
+<view class='i3' style="opacity:{{0.6}}">
+  <image src="../../images/i4.png" class="i3" ></image>
+</view>
+
+<view class="container">
+  <view class='text'>营养食谱</view>
+  <view style="color:mediumseagreen;font-size: small;">以下按健康程度排序呦~</view>
+</view>
+
+<view class="menu_1">
+  <block wx:for="{{name}}" wx:for-item="i">
+    <text class="container" style="font-family:'Ink Free';color: rgb(25, 150, 123);"> \nNO.{{index+1}} </text>
+    <view class="container"> {{i}} </view>
+  </block>
+  
+</view>
+<text>\n\n\n\n\n</text>

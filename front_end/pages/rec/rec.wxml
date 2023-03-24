@@ -1,0 +1,29 @@
+<!--pages/rec/rec.wxml-->
+
+<view class='i3' style="opacity:{{0.6}}">
+  <image src="../../images/i4.png" class="i3" ></image>
+</view>
+
+<view class="container">
+<text>\n</text>
+<text class='title'>选择您想吃的主食:\n\n</text>
+<view>
+<radio-group bindchange="food">
+  <block wx:for="{{items}}">
+    <block wx:if="{{index%2==0}}">
+        <view class='menu_1'>
+        <radio value="{{items[index].name}}" checked="{{items[index].checked}}" /><text space="ensp">{{items[index].value}}          \t</text>
+        <radio value="{{items[index+1].name}}" checked="{{items[index+1].checked}}" />{{items[index+1].value}}
+        </view>
+        <text>\n</text>
+    </block>
+  </block>
+</radio-group></view>
+
+<view class='title'>您计划吃多少主食：</view>
+<text>\n</text>
+<input class="input00" bindinput="weight" placeholder="输入重量(g),默认100g"/>
+<text>\n\n</text>
+<button bindtap="detail">开始推荐</button>
+</view>
+

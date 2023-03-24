@@ -1,0 +1,45 @@
+{
+    "lazyCodeLoading": "requiredComponents",
+  "pages": [
+    "pages/index/index",
+    "pages/detail/detail",
+    "pages/rec/rec",
+    "pages/add/add",
+    "pages/my/my",
+    "pages/search/search",
+    "pages/success/success"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#14ab79",
+    "navigationBarTitleText": "今天吃什么",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": true,
+    "backgroundTextStyle": "dark",
+    "backgroundColor": "#cccccc"
+  },
+  "style": "v2",
+  "tabBar": {
+    "selectedColor": "#14ab79",
+    "list": [
+      {
+        "pagePath": "pages/rec/rec",
+        "text": "推荐食谱",
+        "iconPath": "/icon/_rec.png",
+        "selectedIconPath": "/icon/rec.png"
+      },
+      {
+        "pagePath": "pages/add/add",
+        "text": "添加菜单",
+        "iconPath": "/icon/_add.png",
+        "selectedIconPath": "/icon/add.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的菜单",
+        "iconPath": "/icon/_my.png",
+        "selectedIconPath": "/icon/my.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,12 @@
+/* pages/my/my.wxss */
+.menu_1{
+  display:flex;
+  justify-content:center;
+  color:rgb(25, 150, 123);
+}
+.menu_2{
+  display:flex;
+  justify-content:center;
+  font-family: cursive;
+  color: black;
+}

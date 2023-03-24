@@ -1,0 +1,33 @@
+<!--pages/search/search.wxml-->
+<view class='i3' style="opacity:{{0.6}}">
+  <image src="../../images/i4.png" class="i3" ></image>
+</view>
+<text>\n\n</text>
+
+<view class="container">
+<input class='input00' placeholder="输入食材名(请点击搜索)" type="text" bindinput="search_" />
+<text>\n</text>
+<input class='input00' placeholder="重量(g)" type="text" bindinput="weight" />
+</view>
+
+<text>\n\n</text>
+
+
+<view class="menu_1">
+<scroll-view scroll-y="true" style="height:650rpx;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+<radio-group bindchange="food">
+  <view  wx:for="{{items}}">
+    <radio value="{{item.name}}" checked="{{item.checked}}" />
+    {{item.value}}
+    <text>\n\n</text>
+  </view>
+</radio-group>
+</scroll-view>
+</view>
+
+
+
+<view  class="btns">
+    <button type="primary" bindtap="back" class="button1">确定</button>
+    <button type="primary" bindtap="search_e" class="button2">搜索</button>
+</view>

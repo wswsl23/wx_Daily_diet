@@ -1,0 +1,12 @@
+/* pages/rec/rec.wxss */
+
+
+  .title{
+    font-family: 'ShanghaiFace-Cream-BoldGB';
+    font-size: xx-large;
+    color:rgb(25, 150, 123);
+    font-weight: bolder;
+    display:flex;
+    justify-content:left;
+  }
+

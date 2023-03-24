@@ -1,0 +1,19 @@
+<!--index.wxml-->
+<view style="opacity:{{0.8}}">
+  <image src="../../images/i4.png" class="i3" ></image>
+</view>
+
+<text>\n\n\n</text>
+<view class="container">
+  <text class='text'>  今天吃什么？</text>
+</view>
+
+<view>
+  <image src="../../images/i2.png" class="i2"></image>
+</view>
+
+<view>
+  <button bindtap="change" id='btn'>开始使用</button>
+</view>
+
+

@@ -1,0 +1,21 @@
+<!--index.wxml-->
+<view class='i3' style="opacity:{{0.6}}">
+  <image src="../../images/i4.png" class="i3" ></image>
+</view>
+
+<block  wx:for="{{data}}" wx:for-item="i">
+
+  <text>\n</text>
+  <text class="menu_1">
+    <block wx:for="{{i[0]}}" wx:for-item="j">
+      <text> {{j}} </text>
+    </block>
+  </text>
+  <block wx:if="{{index>0}}" wx:for="{{i}}" wx:for-item="j">
+    <block wx:if="{{j.length!=0}}">
+      <text class="menu_2"> {{j}}g </text>
+    </block>
+  </block>
+  <text>\n</text>
+</block>
+

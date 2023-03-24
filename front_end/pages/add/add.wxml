@@ -1,0 +1,26 @@
+<!--pages/add/add.wxml-->
+<view class='i3' style="opacity:{{0.6}}">
+  <image src="../../images/i4.png" class="i3" ></image>
+</view>
+
+<text>\n</text>
+<view class="container">
+<input class='input00' placeholder="输入菜谱名称" type="text" bindinput="recipe"/>
+</view>
+<text>\n</text>
+
+
+
+<view class="menu_1" style="font-size:30rpx;" >
+<view wx:for="{{list}}">
+    <text space="ensp">    {{item}}</text>
+    <text>\n\n</text>
+</view>
+</view>
+
+
+
+<view  class="btns">
+    <button type="primary" bindtap="add" class="button1">添加食材</button>
+    <button type="primary" bindtap="submit" class="button2">提交</button>
+</view>
